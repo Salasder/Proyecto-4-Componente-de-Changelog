@@ -1,0 +1,241 @@
+/*Changelog*/
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #222;
+    padding: 24px 12px;
+}
+
+.contenedor-cambios {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 22px;
+    padding: 42px 32px 30px;
+}
+
+.encabezado-cambios {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-principal {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.subtitulo-cambios {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.nombre-proyecto {
+    color: #777;
+    font-size: 12px;
+}
+
+.linea-tiempo {
+    max-width: 650px;
+    margin: 32px auto 24px;
+    position: relative;
+}
+
+.linea-tiempo::before {
+    content: "";
+    position: absolute;
+    left: 34%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #333;
+}
+
+.elemento-tiempo {
+    display: grid;
+    grid-template-columns: 31% 6% 63%;
+    align-items: start;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.fecha-cambio {
+    text-align: right;
+    padding-right: 12px;
+    color: #999;
+    font-size: 13px;
+}
+
+.punto-tiempo {
+    width: 11px;
+    height: 11px;
+    background-color: #222;
+    border-radius: 50%;
+    margin: 3px auto 0;
+    z-index: 1;
+}
+
+.contenido-cambio {
+    padding-left: 0;
+}
+
+.titulo-cambio {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.descripcion-cambio {
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.zona-boton {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.boton-historial {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 9px;
+    padding: 11px 24px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.boton-historial:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .contenedor-cambios {
+        padding: 30px 16px;
+    }
+
+    .titulo-principal {
+        font-size: 26px;
+    }
+
+    .linea-tiempo::before {
+        left: 7px;
+    }
+
+    .elemento-tiempo {
+        grid-template-columns: 16px 1fr;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .fecha-cambio {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .punto-tiempo {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        margin-top: 3px;
+    }
+
+    .contenido-cambio {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+/*historial*/
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #222;
+    padding: 24px 12px;
+}
+
+.contenedor-historial {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.subtitulo {
+    color: #888;
+    font-size: 14px;
+}
+
+.version-cambio {
+    border-left: 2px solid #333;
+    padding-left: 22px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.version-cambio::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.numero-version {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fecha-version {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.titulo-version {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lista-cambios {
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.boton-regresar {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.boton-regresar:hover {
+    background-color: #444;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .contenedor-historial {
+        padding: 22px 18px;
+    }
+}
